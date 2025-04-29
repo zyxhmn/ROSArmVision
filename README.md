@@ -80,7 +80,7 @@ Intel RealSense ROS 包通常会提供一个已经处理过的深度图像话题
 
 文件位于`zyxhmn_gazebo/worlds/room.world`,下载自[gazebo模型库](https://app.gazebosim.org/)的[living room](https://app.gazebosim.org/makerspet/worlds/living_room)，并对其进行修改。
 
-![object_detect](./zyxhmn_gazebo/imgs/2.png)
+![gazebo](./zyxhmn_gazebo/imgs/2.png)
 
 ### 视觉检测节点
 
