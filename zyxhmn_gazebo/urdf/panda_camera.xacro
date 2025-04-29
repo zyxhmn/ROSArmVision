@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="panda_camera">
+  <!-- 参数 -->
+  <xacro:arg name="camera_name" default="camera"/>
+  <xacro:arg name="arm_id" default="panda"/>
+  
+  <!-- 包含RealSense D435i相机的XACRO定义 -->
+  <xacro:include filename="$(find realsense_gazebo_description)/urdf/_d435i.urdf.xacro"/>
+  
+  <!-- 添加相机到机器人末端执行器 -->
+  <xacro:sensor_d435i parent="$(arg arm_id)_link8" name="$(arg camera_name)" topics_ns="$(arg camera_name)"> 
+    <origin xyz="0.0 0.0 0.05" rpy="0.0 0.0 0.0"/>
+  </xacro:sensor_d435i>
+</robot>

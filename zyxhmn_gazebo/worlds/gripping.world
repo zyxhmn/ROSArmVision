@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="custom_dining_world">
+
+    <!-- 地面 -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- 光源 -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- 冰箱 -->
+    <include>
+      <uri>model://Refrigerator</uri>
+      <pose>1 0 0 0 0 0</pose> <!-- x=1m, y=0m -->
+    </include>
+
+    <!-- 吃饭的台子 Dining Table -->
+    <include>
+      <uri>model://Dining Table</uri>
+      <pose>0 0 0 0 0 0</pose> <!-- 原点 -->
+    </include>
+
+    <!-- 另一张台子 Table -->
+    <include>
+      <uri>model://Table</uri>
+      <pose>-1.5 0 0 0 0 0</pose> <!-- x=-1.5m -->
+    </include>
+
+    <!-- 电饭锅 放在 Table 上 -->
+    <include>
+      <uri>model://TriStar_Products_PPC_Power_Pressure_Cooker_XL_in_Black</uri>
+      <pose>-1.5 0 0.8 0 0 0</pose> <!-- 根据台子高度调节z -->
+    </include>
+
+    <!-- 四张椅子围绕 Dining Table -->
+    <include>
+      <uri>model://Chair</uri>
+      <pose>0 0.8 0 0 0 0</pose> <!-- 前方 -->
+    </include>
+
+    <include>
+      <uri>model://Chair</uri>
+      <pose>0 -0.8 0 0 0 3.14</pose> <!-- 后方，旋转180度 -->
+    </include>
+
+    <include>
+      <uri>model://Chair</uri>
+      <pose>0.8 0 0 0 0 1.57</pose> <!-- 右侧，旋转90度 -->
+    </include>
+
+    <include>
+      <uri>model://Chair</uri>
+      <pose>-0.8 0 0 0 0 -1.57</pose> <!-- 左侧，旋转-90度 -->
+    </include>
+
+    <!-- 盘子 放在 Dining Table 上 -->
+    <include>
+      <uri>model://Threshold_Tray_Rectangle_Porcelain</uri>
+      <pose>0 0 0.75 0 0 0</pose> <!-- 调整z使其在桌面上 -->
+    </include>
+
+    <!-- 柠檬 放在 Dining Table 上 -->
+    <include>
+      <uri>model://Lemon</uri>
+      <pose>0.2 0 0.75 0 0 0</pose> <!-- 盘子旁边 -->
+    </include>
+
+  </world>
+</sdf>

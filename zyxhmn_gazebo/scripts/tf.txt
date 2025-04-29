@@ -1,0 +1,273 @@
+D435i_camera_accel_frame: 
+  parent: 'D435i_camera_link'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+D435i_camera_link: 
+  parent: 'D435i_camera_bottom_screw_frame'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+D435i_camera_accel_optical_frame: 
+  parent: 'D435i_camera_accel_frame'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+D435i_camera_color_frame: 
+  parent: 'D435i_camera_depth_frame'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+D435i_camera_depth_frame: 
+  parent: 'D435i_camera_link'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+D435i_camera_color_optical_frame: 
+  parent: 'D435i_camera_color_frame'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+D435i_camera_depth_optical_frame: 
+  parent: 'D435i_camera_depth_frame'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+D435i_camera_gyro_frame: 
+  parent: 'D435i_camera_link'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+D435i_camera_gyro_optical_frame: 
+  parent: 'D435i_camera_gyro_frame'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+D435i_camera_bottom_screw_frame: 
+  parent: 'world'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+D435i_camera_left_ir_frame: 
+  parent: 'D435i_camera_depth_frame'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+D435i_camera_left_ir_optical_frame: 
+  parent: 'D435i_camera_left_ir_frame'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+D435i_camera_right_ir_frame: 
+  parent: 'D435i_camera_depth_frame'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+D435i_camera_right_ir_optical_frame: 
+  parent: 'D435i_camera_right_ir_frame'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+panda_hand: 
+  parent: 'panda_link8'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+panda_link8: 
+  parent: 'panda_link7'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+panda_hand_sc: 
+  parent: 'panda_hand'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+panda_hand_tcp: 
+  parent: 'panda_hand'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+panda_link7: 
+  parent: 'panda_link6'
+  broadcaster: '/robot_state_publisher'
+  rate: 31.056
+  most_recent_transform: 15002.542
+  oldest_transform: 15001.576
+  buffer_length: 0.966
+panda_link0_sc: 
+  parent: 'panda_link0'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+panda_link0: 
+  parent: 'world'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+panda_link1_sc: 
+  parent: 'panda_link1'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+panda_link1: 
+  parent: 'panda_link0'
+  broadcaster: '/robot_state_publisher'
+  rate: 31.056
+  most_recent_transform: 15002.542
+  oldest_transform: 15001.576
+  buffer_length: 0.966
+panda_link2_sc: 
+  parent: 'panda_link2'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+panda_link2: 
+  parent: 'panda_link1'
+  broadcaster: '/robot_state_publisher'
+  rate: 31.056
+  most_recent_transform: 15002.542
+  oldest_transform: 15001.576
+  buffer_length: 0.966
+panda_link3_sc: 
+  parent: 'panda_link3'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+panda_link3: 
+  parent: 'panda_link2'
+  broadcaster: '/robot_state_publisher'
+  rate: 31.056
+  most_recent_transform: 15002.542
+  oldest_transform: 15001.576
+  buffer_length: 0.966
+panda_link4_sc: 
+  parent: 'panda_link4'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+panda_link4: 
+  parent: 'panda_link3'
+  broadcaster: '/robot_state_publisher'
+  rate: 31.056
+  most_recent_transform: 15002.542
+  oldest_transform: 15001.576
+  buffer_length: 0.966
+panda_link5_sc: 
+  parent: 'panda_link5'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+panda_link5: 
+  parent: 'panda_link4'
+  broadcaster: '/robot_state_publisher'
+  rate: 31.056
+  most_recent_transform: 15002.542
+  oldest_transform: 15001.576
+  buffer_length: 0.966
+panda_link6_sc: 
+  parent: 'panda_link6'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+panda_link6: 
+  parent: 'panda_link5'
+  broadcaster: '/robot_state_publisher'
+  rate: 31.056
+  most_recent_transform: 15002.542
+  oldest_transform: 15001.576
+  buffer_length: 0.966
+panda_link7_sc: 
+  parent: 'panda_link7'
+  broadcaster: '/robot_state_publisher'
+  rate: 10000.000
+  most_recent_transform: 0.000
+  oldest_transform: 0.000
+  buffer_length: 0.000
+panda_NE: 
+  parent: 'panda_link8'
+  broadcaster: '/gazebo'
+  rate: 30.083
+  most_recent_transform: 15002.540
+  oldest_transform: 15001.576
+  buffer_length: 0.964
+panda_EE: 
+  parent: 'panda_NE'
+  broadcaster: '/gazebo'
+  rate: 30.083
+  most_recent_transform: 15002.540
+  oldest_transform: 15001.576
+  buffer_length: 0.964
+panda_K: 
+  parent: 'panda_EE'
+  broadcaster: '/gazebo'
+  rate: 30.083
+  most_recent_transform: 15002.540
+  oldest_transform: 15001.576
+  buffer_length: 0.964
+panda_leftfinger: 
+  parent: 'panda_hand'
+  broadcaster: '/robot_state_publisher'
+  rate: 31.056
+  most_recent_transform: 15002.542
+  oldest_transform: 15001.576
+  buffer_length: 0.966
+panda_rightfinger: 
+  parent: 'panda_hand'
+  broadcaster: '/robot_state_publisher'
+  rate: 31.056
+  most_recent_transform: 15002.542
+  oldest_transform: 15001.576
+  buffer_length: 0.966

@@ -1,0 +1,16 @@
+<launch>
+
+  <!-- 启动 Panda MoveIt Gazebo 仿真，并加载指定的世界文件 -->
+  <include file="$(find panda_moveit_config)/launch/demo_gazebo.launch">
+    <arg name="world" value="/home/sea/zhoudapao_ws/src/zyxhmn_gazebo/worlds/room.world"/>
+    <!-- 如果 demo_gazebo.launch 需要其他参数，也可以在这里添加 -->
+    <!-- 例如: <arg name="paused" value="true"/> -->
+  </include>
+
+  <!-- 启动物体检测节点 -->
+  <node name="object_detector_node" pkg="zyxhmn_gazebo" type="object_detect.py" output="screen">
+    <!-- 如果你的 object_detect.py 需要参数，可以在这里添加 -->
+    <!-- 例如: <param name="config_file" value="$(find zyxhmn_gazebo)/config/detect_params.yaml"/> -->
+  </node>
+
+</launch>
