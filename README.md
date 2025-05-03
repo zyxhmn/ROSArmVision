@@ -100,3 +100,7 @@ Intel RealSense ROS 包通常会提供一个已经处理过的深度图像话题
   <source src="0.mkv" type="./zyxhmn_gazebo/imgs/0.mkv">
   Your browser does not support the video tag.
 </video>
+### TODO
+
+- 机械臂抓握力度问题
+- ros内yolo模型部署与应用
